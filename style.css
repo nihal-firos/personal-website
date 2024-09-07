@@ -20,6 +20,7 @@ header {
 }
 
 #navbar{
+    display: flex; justify-content: center; align-items: center; gap: 15px;
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensures the navbar stays on top of other elements */
@@ -28,19 +29,25 @@ header {
 
 
 nav ul {
+    display: flex; justify-content: center; align-items: center; padding: 10px;
+    gap: 10vw;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+/*
 nav ul li {
     display: inline;
     margin-right: 100px;
 }
+*/
 
+/*
 #contact-li{
     margin-right: 0;
 }
+*/
 
 nav ul li a {
     color: black;
@@ -67,6 +74,7 @@ p{
 #imagesContainer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pl{
@@ -87,6 +95,8 @@ p{
 
 
 .jobexp{
+    overflow: hidden;
+    word-wrap: break-word;
     width: 800px; /* Width of the rectangle */
     height: 350px; /* Height of the rectangle */
     background-color:rgb(245, 247, 250); /* Background color */
@@ -207,9 +217,13 @@ li{
 }
 
 /* Form CSS */
+.cparent{
+    display: grid;
+    place-items: center;
+}
 
 .cform{
-    margin-left: 340px;
+    /*margin-left: 340px;*/
     height: 480px;
     width: 460px;
     background-color:rgb(245, 247, 250);
